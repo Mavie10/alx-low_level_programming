@@ -2,7 +2,9 @@
 
 /**
  * times_table - prints the 9 times table, starting with 0
- * main - check the code for Holberton School students.
+ * example table
+ * 0, 0, 0, 0,
+ * 0, 1, 2, 3,
  * Return: Always 0
  */
 void times_table(void)
