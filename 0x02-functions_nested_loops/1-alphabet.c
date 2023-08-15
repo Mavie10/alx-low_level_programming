@@ -1,16 +1,12 @@
-#include"main.h"
-/**
- * print_alphabet - prints the alphabet in lowercase
- *
- * Return: Always 0 (success)
- */
-void print_alphabet(void)
-{
-	int i;
+#include "main.h"
 
-	for (i = 97; i <= 122; i++)
-	{
-		-putchar(i);
-	}
-	_putchar('\n');
+/**
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+	print_alphabet();
+	return (0);
 }
