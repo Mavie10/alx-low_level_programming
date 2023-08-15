@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-* _abs - function that computes the absolute 
+*_abs - function that computes the absolute
  *        value of an integer
  *
- *0n: takes in integer type input for function
+ *@n: takes in integer type input for function
  *
  * Return: always 0 (success)
 */
