@@ -12,7 +12,3 @@ void print_chessboard(char (*a)[8]);
 void print_diagsums(int *a, int size);
 void set_string(char **s, char *to);
 #endif
-<<<<<<< HEAD
-
-=======
->>>>>>> c54f277aa91aeab384c52bf71cf7c98a1ae989f0
