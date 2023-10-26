@@ -5,7 +5,7 @@
  * @b: A char pointer to a string
  * Return: the unsigned int
  */
-unsigned int binary_to_uint(const char *b);
+unsigned int binary_to_uint(const char *b)
 {
 	unsigned int num = 0;
 	if (!b)
