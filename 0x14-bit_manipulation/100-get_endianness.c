@@ -2,7 +2,7 @@
 
 /**
  * get_endianness - returns the endianness of the system
- * return: 0 if big endian,1 small
+ * Return: 1 if the system is little-endian, 0 if it is big-endian.
  */
 int get_endianness(void)
 {
