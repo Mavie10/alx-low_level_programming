@@ -5,7 +5,7 @@
  * @n: the number
  * @index: the bit
  *
- * return: 1 for success
+ * Return: 1 if successful, -1 otherwise
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
@@ -13,6 +13,6 @@ int clear_bit(unsigned long int *n, unsigned int index)
 		return (-1);
 	if (*n & 1L << index)
 		*n ^= 1L << index;
-	return(1);
+	return (1);
 }
 
