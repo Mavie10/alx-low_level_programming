@@ -1,16 +1,15 @@
 #include "main.h"
 /**
- * flio_bits - the numbers that need to be flippes
+ * flip_bits - the numbers that need to be flippes
  * @n:first number
  * @m:second number
- *
- * return:bits that flip 
+ *  Return: The number of bits needed to flip
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned long int xorval = n ^ m;
-	unsigned int count = 0;
-	
+unsigned int count = 0;
+
 	while (xorval)
 	{
 		if (xorval & 1ul)
