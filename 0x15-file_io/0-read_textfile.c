@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+ 
 
 /**
  *ssize_t read_textfile -  reads a file and prints it to the standard output
