@@ -1,13 +1,13 @@
 #include"main.h"
 #include <fcntl.h>
 #include <unistd.h>
-/*
+/**
  *append_text_to_file - Appends text content to an existing file
  *
  *@filename:the name of the file to which text will be appended
  *@text_content:The content to append to the file
  *
- * return:On success, 1. On failure, -1
+ * Return: 1 on success, -1 on failure
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
