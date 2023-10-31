@@ -1,11 +1,10 @@
 #include"main.h"
 /**
- * int create_file - erminated string to write to the file
+*create_file - Creates a file and writes text content to it
+ * @filename: The name of the file to create
+ * @text_content: The content to write to the file
  *
- * @filname:is the name of the file to create
- * @text_content: content writed in the file
- *
- * return:1 on success, -1 on failure
+ * Return: On success, 1. On failure, -1.
  */
 int create_file(const char *filename, char *text_content)
 {
