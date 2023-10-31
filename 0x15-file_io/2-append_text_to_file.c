@@ -2,10 +2,10 @@
 #include <fcntl.h>
 #include <unistd.h>
 /*
- * int append_text_to_file - appends text at the end of a file
+ *append_text_to_file - Appends text content to an existing file
  *
- * @filename:the name of the file 
- * @text_content:text to write
+ *@filename:the name of the file to which text will be appended
+ *@text_content:The content to append to the file
  *
  * return:1 on success and -1 on failure
  */
@@ -22,12 +22,13 @@ int append_text_to_file(const char *filename, char *text_content)
 		return (-1);
 	if (text_content)
 	{
-		for (nletters = 0; text_content[nletters]; nletters++);
+		for (nletters = 0; text_content[nletters]; nletters++)
+			;
 
 		rwr = write(fd, text_content, nletters);
 		if (rwr == -1)
 			return (-1);
 	}
 	close(fd);
-	return(1);
+	return (1);
 }
