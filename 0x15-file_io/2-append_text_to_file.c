@@ -7,7 +7,7 @@
  *@filename:the name of the file to which text will be appended
  *@text_content:The content to append to the file
  *
- * return:1 on success and -1 on failure
+ * return:On success, 1. On failure, -1
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
