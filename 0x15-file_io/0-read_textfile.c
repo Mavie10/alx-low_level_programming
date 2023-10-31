@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <fcntl.h>
 /**
  *read_textfile - Reads a file and prints its content to the standard output
  * @filename: Name of the file to read
