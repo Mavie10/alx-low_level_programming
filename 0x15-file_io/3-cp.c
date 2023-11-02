@@ -13,14 +13,14 @@
  *
  * Return: 1 on success, and exit on failure
  */
-int main(int argc, char *argv[])
+int main(int ac, char *argv[])
 {
 int from_fd = 0, to_fd = 0;
 ssize_t b;
 char buf[READ_BUF_SIZE];
 
-if (argc != 3)
-dprintf(STDERR_FILENO,"%s" ,USAGE), exit(97);
+if (ac != 3)
+dprintf(STDERR_FILENO,USAGE), exit(97);
 
 from_fd = open(argv[1], O_RDONLY);
 if (from_fd == -1)
