@@ -34,8 +34,7 @@ while ((b = read(from_fd, buf, READ_BUF_SIZE)) > 0)
 {
 if (write(to_fd, buf, b) != b)
 {
-dprintf(STDERR_FILENO, ERR_NOWRITE, argv[2]);
-exit(99);
+dprintf(STDERR_FILENO, ERR_NOWRITE, argv[2]), exit(99);
 }
 }
 
