@@ -70,5 +70,14 @@ void print_class(unsigned char *e_ident)
                 case ELFCLASSNONE:
                         printf("none\n");
                         break;
-                case ELFDATA2LSB:
-                        printf("2's complement, little end
+                case ELFCLASS32:
+                        printf("ELF32\n");
+			break;
+		case ELFCLASS64:
+			printf("ELF64\n");
+			break;
+		default:
+			printf("<unknown: @x>\n", e_ident[EI_CLASS]);
+	}
+}
+
